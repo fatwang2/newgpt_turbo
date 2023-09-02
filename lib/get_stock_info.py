@@ -16,6 +16,7 @@ def get_all_stocks(appkey, sign):
     params = {
         'app': 'finance.stock_list',
         'appkey': appkey,
+        'category': us,
         'sign': sign,
         'format': 'json',
     }
