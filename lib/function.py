@@ -103,7 +103,7 @@ def get_hotlist(api_key, type):
                 raise ValueError(f"未知的类型: {type}")
 
         url = "https://v2.alapi.cn/api/tophub/get"
-        payload = {"token": api_key, "type": api_type}
+        payload = {"token": api_key, "type": api_type, "id": mproPpoq6O}
         headers = {'Content-Type': "application/x-www-form-urlencoded"}
 
         response = requests.request("POST", url, data=payload, headers=headers)
